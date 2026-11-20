@@ -180,7 +180,7 @@ export function analyse(input: AuditInput): AuditResult {
       status: missing.length === 0 ? "pass" : missing.length === 1 ? "warn" : "fail",
       detail: missing.length ? `missing ${missing.join(", ")}` : "publisher, page and breadcrumb are all described",
       fix: missing.length
-        ? `Add ${missing.join(", ")}: assistants use them to tell who publishes the page, what it is and where it sits.`
+        ? `Add ${missing.join(", ")}: assistants use structured data to tell who publishes a page, what it is and where it sits.`
         : undefined,
     });
   }

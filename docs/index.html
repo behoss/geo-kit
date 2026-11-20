@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>geo-kit: GEO toolkit for Next.js to get quoted by ChatGPT, Gemini and Perplexity</title>
+<title>geo-kit: GEO toolkit for Next.js to get quoted by ChatGPT</title>
 <meta name="description" content="Free, open-source GEO toolkit for Next.js: typed JSON-LD builders, llms.txt generator, AI-crawler robots.ts rules and an audit CLI that scores any page for AI search.">
 <link rel="canonical" href="https://behoss.github.io/geo-kit/">
 <meta name="color-scheme" content="light">
@@ -14,7 +14,7 @@
 <meta property="og:url" content="https://behoss.github.io/geo-kit/">
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234338ca'/%3E%3Cpath d='M9 16h14M16 9v14' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareSourceCode","@id":"https://behoss.github.io/geo-kit/#software","name":"geo-kit","description":"GEO toolkit for Next.js: typed JSON-LD builders, llms.txt generator, AI-crawler robots rules and an audit CLI to get quoted by ChatGPT, Gemini, Perplexity and Claude.","url":"https://behoss.github.io/geo-kit/","codeRepository":"https://github.com/behoss/geo-kit","programmingLanguage":["TypeScript","JavaScript"],"runtimePlatform":"Node.js","license":"https://opensource.org/licenses/MIT","keywords":"GEO, generative engine optimisation, SEO, Next.js, JSON-LD, llms.txt, robots.txt, AI search, ChatGPT","author":{"@type":"Person","@id":"https://behoss.github.io/#person","name":"Bez","url":"https://behoss.github.io"}},{"@type":"WebPage","@id":"https://behoss.github.io/geo-kit/#webpage","url":"https://behoss.github.io/geo-kit/","name":"geo-kit: GEO toolkit for Next.js","inLanguage":"en-GB","about":{"@id":"https://behoss.github.io/geo-kit/#software"},"author":{"@id":"https://behoss.github.io/#person"}},{"@type":"FAQPage","@id":"https://behoss.github.io/geo-kit/#faq","mainEntity":[{"@type":"Question","name":"What is GEO?","acceptedAnswer":{"@type":"Answer","text":"GEO (generative engine optimisation) is the work of making a page easy for AI assistants such as ChatGPT, Gemini, Perplexity and Claude to find, read and quote in their answers."}},{"@type":"Question","name":"Does blocking GPTBot stop ChatGPT quoting my site?","acceptedAnswer":{"@type":"Answer","text":"No. GPTBot collects pages for model training. ChatGPT search uses OAI-SearchBot and live fetches use ChatGPT-User, so you can block GPTBot and still be quoted, as long as those two are allowed."}},{"@type":"Question","name":"Do AI crawlers run JavaScript?","acceptedAnswer":{"@type":"Answer","text":"Most do not. They read the HTML your server sends, so content that only appears after client-side rendering is invisible to them. Render it on the server with Next.js server components, static generation or SSR."}},{"@type":"Question","name":"What is llms.txt?","acceptedAnswer":{"@type":"Answer","text":"llms.txt is a Markdown file at the root of a site with a title, a one-paragraph summary and links to its key pages, so AI assistants can understand the site in one request. geo-kit generates it, and llms-full.txt, from one config."}}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareSourceCode","@id":"https://behoss.github.io/geo-kit/#software","name":"geo-kit","description":"GEO toolkit for Next.js: typed JSON-LD builders, llms.txt generator, AI-crawler robots rules and an audit CLI to get quoted by ChatGPT, Gemini, Perplexity and Claude.","url":"https://behoss.github.io/geo-kit/","codeRepository":"https://github.com/behoss/geo-kit","programmingLanguage":["TypeScript","JavaScript"],"runtimePlatform":"Node.js","license":"https://opensource.org/licenses/MIT","keywords":"GEO, generative engine optimisation, SEO, Next.js, JSON-LD, llms.txt, robots.txt, AI search, ChatGPT","author":{"@type":"Person","@id":"https://behoss.github.io/#person","name":"Bez","url":"https://behoss.github.io"}},{"@type":"WebPage","@id":"https://behoss.github.io/geo-kit/#webpage","url":"https://behoss.github.io/geo-kit/","name":"geo-kit: GEO toolkit for Next.js","inLanguage":"en-GB","about":{"@id":"https://behoss.github.io/geo-kit/#software"},"dateModified":"2026-11-20","breadcrumb":{"@id":"https://behoss.github.io/geo-kit/#breadcrumb"},"author":{"@id":"https://behoss.github.io/#person"}},{"@type":"BreadcrumbList","@id":"https://behoss.github.io/geo-kit/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Bez","item":"https://behoss.github.io/"},{"@type":"ListItem","position":2,"name":"geo-kit","item":"https://behoss.github.io/geo-kit/"}]},{"@type":"FAQPage","@id":"https://behoss.github.io/geo-kit/#faq","mainEntity":[{"@type":"Question","name":"What is GEO?","acceptedAnswer":{"@type":"Answer","text":"GEO (generative engine optimisation) is the work of making a page easy for AI assistants such as ChatGPT, Gemini, Perplexity and Claude to find, read and quote in their answers."}},{"@type":"Question","name":"Does blocking GPTBot stop ChatGPT quoting my site?","acceptedAnswer":{"@type":"Answer","text":"No. GPTBot collects pages for model training. ChatGPT search uses OAI-SearchBot and live fetches use ChatGPT-User, so you can block GPTBot and still be quoted, as long as those two are allowed."}},{"@type":"Question","name":"Do AI crawlers run JavaScript?","acceptedAnswer":{"@type":"Answer","text":"Most do not. They read the HTML your server sends, so content that only appears after client-side rendering is invisible to them. Render it on the server with Next.js server components, static generation or SSR."}},{"@type":"Question","name":"What is llms.txt?","acceptedAnswer":{"@type":"Answer","text":"llms.txt is a Markdown file at the root of a site with a title, a one-paragraph summary and links to its key pages, so AI assistants can understand the site in one request. geo-kit generates it, and llms-full.txt, from one config."}}]}]}</script>
 <style>
 :root{--ink:#0f172a;--body:#334155;--muted:#64748b;--line:#e2e8f0;--soft:#f8fafc;--tint:#eef2ff;--accent:#4338ca;--accent-ink:#3730a3;--pass:#15803d;--warn:#b45309;--code:#0b1020;--radius:14px;--max:1120px}
 *{box-sizing:border-box}
@@ -150,10 +150,10 @@ footer.site a{color:var(--muted)}
         </div>
         <div class="install"><span class="p">$</span> npm install github:behoss/geo-kit</div>
         <ul class="facts">
-          <li>TypeScript, fully typed</li>
-          <li>Next.js App Router</li>
+          <li>9 typed JSON-LD builders</li>
+          <li>23 AI crawlers covered</li>
+          <li>5 audit areas, scored out of 100</li>
           <li>MIT licence</li>
-          <li>One runtime dependency</li>
         </ul>
       </div>
       <div class="term" role="img" aria-label="Sample output of geo-kit audit">
@@ -340,7 +340,7 @@ npx geo-kit robots --no-training --sitemap https://your-site.com/sitemap.xml</pr
 
 <footer class="site">
   <div class="wrap">
-    <span>geo-kit · MIT licence · made by <a href="https://behoss.github.io">Bez</a></span>
+    <span>geo-kit · MIT licence · made by <a href="https://behoss.github.io">Bez</a> · updated <time datetime="2026-11-20">20 November 2026</time></span>
     <span><a href="https://github.com/behoss/geo-kit">GitHub</a> · <a href="https://github.com/behoss/geo-kit/issues">Issues</a> · <a href="https://softgen.co.uk">Softgen</a></span>
   </div>
 </footer>
