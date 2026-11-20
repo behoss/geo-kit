@@ -1,0 +1,82 @@
+{
+  "name": "geo-kit",
+  "version": "0.1.0",
+  "description": "GEO toolkit for Next.js: typed JSON-LD builders, llms.txt, AI-crawler robots rules and an audit CLI to get quoted by ChatGPT, Gemini, Perplexity and Claude.",
+  "keywords": [
+    "geo",
+    "generative-engine-optimization",
+    "seo",
+    "nextjs",
+    "json-ld",
+    "schema-org",
+    "llms-txt",
+    "robots-txt",
+    "ai-search",
+    "chatgpt"
+  ],
+  "author": "Bez (https://behoss.github.io)",
+  "license": "MIT",
+  "homepage": "https://behoss.github.io/geo-kit/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/behoss/geo-kit.git"
+  },
+  "bugs": "https://github.com/behoss/geo-kit/issues",
+  "type": "module",
+  "engines": {
+    "node": ">=18.17"
+  },
+  "bin": {
+    "geo-kit": "dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "import": "./dist/react.js"
+    },
+    "./audit": {
+      "types": "./dist/audit/index.d.ts",
+      "import": "./dist/audit/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json && node scripts/chmod-bin.mjs",
+    "prepare": "npm run build",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "audit:url": "node dist/cli.js audit"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "typescript": "^5.9.3",
+    "vitest": "^5.1.1"
+  },
+  "dependencies": {
+    "node-html-parser": "^9.0.7"
+  }
+}
