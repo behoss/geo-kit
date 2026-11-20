@@ -90,6 +90,8 @@ const FACT_PATTERNS: RegExp[] = [
   /\b\d[\d,.]*\s?(?:working\s|business\s|calendar\s)?(?:days?|weeks?|months?|years?|hours?|minutes?|mins?|seconds?|ms|kg|g|km|miles?|mph|GB|MB|TB|users?|customers?|clients?|projects?|apps?|countries|languages|reviews?|stars?|products?|pages?|sites?|teams?|people|steps?|x)\b/gi,
   /\bv?\d+\.\d+(?:\.\d+)?\b/g,
   /#\d+\b/g,
+  // Any count followed by a noun ("9 builders", "23 AI crawlers", "1,200 customers").
+  /\b\d[\d,]*\+?\s[A-Za-z]/g,
   /\b(?:day|week|month|step|phase|sprint|stage|level|tier)\s\d+\b/gi,
 ];
 

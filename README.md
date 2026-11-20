@@ -156,7 +156,7 @@ It fetches the page, its `robots.txt` and `llms.txt`, refetches the page as thre
 
 ```text
 geo-kit audit  https://softgen.co.uk/
-200 · 261 KB HTML · 107 ms
+200 · 261 KB HTML · 108 ms
 
 Structured data
   ✓ JSON-LD present           2 blocks: Organization, Person, WebSite, WebPage, DefinedTerm, FAQPage
@@ -175,13 +175,17 @@ AI crawler access
 
 Quotability
   ✓ Direct answer up top      "Softgen is the UK's #1 software development agency, specialising in AI applications — we s…" (24 words)
+  ✓ Specific facts            8 checkable facts (prices, numbers, dates, durations) in the first 300 words
   ✓ Questions answered        5 question-style headings, FAQ in JSON-LD
-  …
+  ! Dated                     no dateModified, <time> or visible updated date
 
-Score  93/100  Excellent: ready to be quoted
+Score  99/100  Excellent: ready to be quoted
+
+Fix first
+  1. Show an 'Updated' date in a <time datetime> and set dateModified in JSON-LD.
 ```
 
-Every check that is not a pass comes with a plain fix, and the top three are listed under **Fix first**.
+Every check that is not a pass comes with a plain fix, and the top three are listed under **Fix first** (the Head group is trimmed above).
 
 | Option | What it does |
 | --- | --- |

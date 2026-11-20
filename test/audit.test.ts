@@ -68,3 +68,9 @@ describe("auditUrl", () => {
     expect(report).not.toContain("\x1b[");
   });
 });
+
+describe("countFacts", () => {
+  it("counts a number followed by a noun", () => {
+    expect(countFacts("9 typed builders and 23 AI crawlers, plus 1,200 happy users")).toBe(3);
+  });
+});
