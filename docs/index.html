@@ -30,6 +30,8 @@ p{margin:0 0 1em}
 code,pre,kbd{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;font-size:.88em}
 :not(pre)>code{background:var(--tint);color:var(--accent-ink);padding:.12em .4em;border-radius:6px}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.hero .wrap>*,.step>*,.cols2>*,.grid4>*,.closing>*{min-width:0}
+pre{max-width:100%}
 header.site{border-bottom:1px solid var(--line);background:#fff}
 header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
 .brand{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--ink);text-decoration:none;font-size:1.1rem}
@@ -83,6 +85,7 @@ th{background:var(--soft);color:var(--ink);font-weight:700;width:30%}
 tr:last-child td,tr:last-child th{border-bottom:0}
 td code{white-space:nowrap}
 .table-wrap{overflow-x:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .faq dl{margin:0;display:grid;gap:14px}
 .faq dt{font-weight:700;color:var(--ink);font-size:1.05rem}
 .faq dd{margin:4px 0 0}
@@ -252,7 +255,7 @@ npx geo-kit robots --no-training --sitemap https://your-site.com/sitemap.xml</pr
       </div>
       <div class="table-wrap">
         <table>
-          <caption class="sr" style="position:absolute;left:-9999px">What the audit checks</caption>
+          <caption class="sr">What the audit checks</caption>
           <tbody>
             <tr><th scope="row">Structured data</th><td>JSON-LD present and valid, required properties per type, publisher + page + breadcrumb</td></tr>
             <tr><th scope="row">Head</th><td>Title, meta description, absolute canonical, noindex and nosnippet, <code>lang</code></td></tr>
